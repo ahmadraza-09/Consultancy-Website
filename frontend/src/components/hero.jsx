@@ -16,8 +16,8 @@ const Hero = () => {
     <>
     <div className='hero'>
         <Swiper 
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        // autoplay={{ delay: 2500, disableOnInteraction: false }} 
+        modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
+        autoplay={{ delay: 2500, disableOnInteraction: false }} 
         spaceBetween={30}
         slidesPerView={1}
         style={{ maxWidth: '100%', minWidth: '300px' , padding: '0px 0px' }}
