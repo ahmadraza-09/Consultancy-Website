@@ -24,6 +24,7 @@ const Header = () => {
   return (
     <>
       <div className={navbarsection ? 'navbar-section active' : 'navbar-section'}>
+        {/* Banner */}
         <div className="contact-address-banner">
             <div className="contact-address-banner-left">
                 <div className="contact-info">
@@ -52,6 +53,7 @@ const Header = () => {
             </div>
         </div>
 
+        {/* Navbar */}
         <div className="navbar">
             <input type="checkbox" id='check' checked={menuOpen} onChange={toggleMenu}/>
             <div className="logo-section">
