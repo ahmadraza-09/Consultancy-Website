@@ -41,6 +41,7 @@ const TestimonialCard = () => {
             spaceBetween: 30,
           },
         }}
+        className='swiperslide'
       >
         <SwiperSlide style={{width: '250px'}}>  
           <div className="testimonial-card">

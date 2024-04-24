@@ -11,21 +11,9 @@
 .testimonials>h2 {
     font-size: 40px;
     text-align: center;
-    position: relative;
     width: fit-content;
 }
 
-.testimonials>h2::before {
-    content: '';
-    position: absolute;
-    left: 10px;
-    bottom: -8px;
-    background-color: #0055ff;
-    height: 5px;
-    box-sizing: border-box;
-    width: 200px;
-    border-radius: 55px;
-}
 
 /* Responsive */
 @media (min-width: 320px) and (max-width: 628px) {
