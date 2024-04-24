@@ -1,0 +1,20 @@
+.testimonials {
+    width: 100%;
+    height: fit-content;
+    /* border: 2px solid #000; */
+    margin-top: 120px;
+}
+
+.testimonials h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (min-width: 320px) and (max-width: 628px) {
+
+    .testimonials h2 {
+        font-size: 25px;
+    }
+
+}
