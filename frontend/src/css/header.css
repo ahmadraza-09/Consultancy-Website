@@ -254,6 +254,10 @@ a {
     }
 
     .contact-address-banner {
+        padding-bottom: 10px;
+    }
+
+    .contact-address-banner {
         align-items: start;
         height: fit-content;
         padding-top: 5px;
