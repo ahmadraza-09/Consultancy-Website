@@ -41,13 +41,15 @@ const Header = () => {
             </div>
             <div className="contact-address-banner-right">
                 <div className="contact-info">
-                    <i class="fa-brands fa-instagram"></i>
+                    <img src="images/instagram-img.png" alt="" />
                     |
-                    <i class="fa-brands fa-whatsapp"></i>
+                    <img src="images/whatsapp-img.png" alt="" />
                     |
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <img src="images/linkedin-img.png" alt="" />
                     |
-                    <i class="fa-brands fa-x-twitter"></i>
+                    <img src="images/twitter-img.png" alt="" />
+                    |
+                    <img src="images/facebook-img.png" alt="" />
                 </div>
 
             </div>
@@ -57,7 +59,8 @@ const Header = () => {
         <div className="navbar">
             <input type="checkbox" id='check' checked={menuOpen} onChange={toggleMenu}/>
             <div className="logo-section">
-                <h2 className='logo'>Job<span>Tech</span></h2>
+                {/* <h2 className='logo'>Job<span>Tech</span></h2> */}
+                <img src="images/hefty-logo.png" alt="" />
             </div>
             <ul className="menu-section">
                 <li>Home</li>
