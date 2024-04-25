@@ -6,6 +6,7 @@ import Testimonial from '../components/testimonial';
 import Services from '../components/services';
 import WelcomeSection from '../components/welcomesection';
 import FindJob from '../components/findjob';
+import CompanyRegistered from '../components/companyregistered';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       {<WelcomeSection/>}
       {<FindJob/>}
       {<Services/>}
+      {<CompanyRegistered/>}
       {<Testimonial/>}
       {<Footer/>}
     </>
