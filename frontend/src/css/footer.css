@@ -9,6 +9,9 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    background-image: url('./images/asset4.png');
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 
 a {
