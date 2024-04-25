@@ -20,22 +20,22 @@ const WelcomeSection = () => {
                 <div className="img-box">
                     <img src="images/welcome2.png" alt="" />
                 </div>
-                <h2>Certified Company</h2>
-                <p>Experienced and reputed placement agencies providing the unmatched services that our attained by our client.</p>
+                <h2>Innovative Works</h2>
+                <p>We help you get only the quality employees with an amazing set of skills</p>
             </div>
             <div className="welcome-box-card">
                 <div className="img-box">
                     <img src="images/welcome3.png" alt="" />
                 </div>
-                <h2>Certified Company</h2>
-                <p>Experienced and reputed placement agencies providing the unmatched services that our attained by our client.</p>
+                <h2>Business Solutions</h2>
+                <p>Our consulting sessions has several layers and processes to suit the various needs.</p>
             </div>
             <div className="welcome-box-card">
                 <div className="img-box">
                     <img src="images/welcome4.png" alt="" />
                 </div>
-                <h2>Certified Company</h2>
-                <p>Experienced and reputed placement agencies providing the unmatched services that our attained by our client.</p>
+                <h2>Client Management</h2>
+                <p>We provide you with highly talented and dedicated individuals how can offer your business.</p>
             </div>
         </div>
       </section>
