@@ -98,6 +98,7 @@ a {
 .logo-section {
     width: fit-content;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .logo-section img {

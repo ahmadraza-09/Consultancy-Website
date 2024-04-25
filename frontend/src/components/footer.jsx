@@ -9,7 +9,7 @@ const Footer = () => {
             <div class="footer-col">
                 {/* <h2>Health<span>Care</span></h2> */}
                 <img src="images/hefty-logo.png" alt="" />
-                <p>Your trusted partner in wellness, offering comprehensive medical resources and services.</p>
+                {/* <p>Your trusted partner in wellness, offering comprehensive medical resources and services.</p> */}
                 <div className="contact-col">
                     <p>
                         <i class="fa-solid fa-location-dot"></i>
@@ -17,13 +17,16 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="contact-col">
-                    <p><i class="fa-solid fa-phone-volume"></i><a href="tel:+123 888 9999" target='_blank'>+123 888 9999</a></p>
-                    <p><i class="fa-solid fa-phone-volume"></i><a href="tel:+123 888 9999" target='_blank'>+123 888 9999</a></p>
+                    <p><i class="fa-solid fa-phone-volume"></i><a href="tel:9471876257" target='_blank'>+91 9471876257</a></p>
+                    <p><i class="fa-solid fa-phone-volume"></i><a href="tel:7870997066" target='_blank'>+91 7870997066</a></p>
+                    <p><i class="fa-solid fa-phone-volume"></i><a href="tel:6123557176" target='_blank'>+91 6123557176</a></p>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:info@heftyservices.com" target='_blank'>info@heftyservices.com</a></p>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:hr@heftyservices.com" target='_blank'>hr@heftyservices.com</a></p>
                 </div>
                 <div className="contact-col">
                     <p>
                         <i class="fa-regular fa-clock"></i>
-                        <p>Mon – Sat: 8 am – 5 pm, Sunday: CLOSED</p>
+                        <p>Mon – Sun: 10:30 am – 06.00 pm</p>
                     </p>
                 </div>
             </div>

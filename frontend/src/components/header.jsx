@@ -1,9 +1,11 @@
 import React from 'react'
 import '../css/header.css'
 import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
 
+    const navigate = useNavigate();
     const [navbarsection, setNavbarSection] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -29,13 +31,13 @@ const Header = () => {
             <div className="contact-address-banner-left">
                 <div className="contact-info">
                     <i class="fa-solid fa-phone"></i>
-                    <a href="tel:923-9348-193" target="_blank">923-9348-193</a>
+                    <a href="tel:9471876257" target="_blank">+91 9471876257</a>
                     {/* <button><a href="tel:923-9348-193" target="_blank">Call Now</a></button> */}
                 </div>
                 
                 <div className="contact-info">
                     <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:ahmadraza20082003@gmail.com" target="_blank" >ahmadraza@gmail.com</a>
+                    <a href="mailto:info@heftyservices.com" target="_blank" >info@heftyservices.com</a>
                     {/* <button><a href="mailto:ahmadraza20082003@gmail.com" target="_blank" >Email Now</a></button> */}
                 </div>
             </div>
@@ -58,7 +60,7 @@ const Header = () => {
         {/* Navbar */}
         <div className="navbar">
             <input type="checkbox" id='check' checked={menuOpen} onChange={toggleMenu}/>
-            <div className="logo-section">
+            <div className="logo-section" onClick={() => {navigate('/')}}>
                 {/* <h2 className='logo'>Job<span>Tech</span></h2> */}
                 <img src="images/hefty-logo.png" alt="" />
             </div>
@@ -72,7 +74,7 @@ const Header = () => {
                 <li>Contact</li>
             </ul>
             <div className="job-section">
-                <button>Opening Jobs</button>
+                <button onClick={() => {navigate('/oppeningjobs')}}>Opening Jobs</button>
                 <label className={menuOpen} htmlFor="check">
                     {menuOpen ? <i className="fa-solid fa-close"></i> : <i className="fa-solid fa-bars"></i>}
                 </label>
