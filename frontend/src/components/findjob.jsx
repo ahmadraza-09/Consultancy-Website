@@ -1,7 +1,11 @@
 import React from 'react'
 import '../css/findjob.css';
+import { useNavigate } from "react-router-dom";
 
 const FindJob = () => {
+
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="find-job-section">
@@ -11,7 +15,7 @@ const FindJob = () => {
                 <h4>Find the one that’s right for you.</h4>
             </div>
             <p>Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide. The right job is out there.</p>
-            <button>Search Job</button>
+            <button onClick={() => {navigate('/oppeningjobs')}}>Search Job</button>
         </div>
         <div className="find-job-section-right">
             <img src="images/find-job.jpg" alt="" />

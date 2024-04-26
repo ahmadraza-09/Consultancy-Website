@@ -32,13 +32,11 @@ const Header = () => {
                 <div className="contact-info">
                     <i class="fa-solid fa-phone"></i>
                     <a href="tel:9471876257" target="_blank">+91 9471876257</a>
-                    {/* <button><a href="tel:923-9348-193" target="_blank">Call Now</a></button> */}
                 </div>
                 
                 <div className="contact-info">
                     <i class="fa-solid fa-envelope"></i>
                     <a href="mailto:info@heftyservices.com" target="_blank" >info@heftyservices.com</a>
-                    {/* <button><a href="mailto:ahmadraza20082003@gmail.com" target="_blank" >Email Now</a></button> */}
                 </div>
             </div>
             <div className="contact-address-banner-right">
@@ -65,9 +63,9 @@ const Header = () => {
                 <img src="images/hefty-logo.png" alt="" />
             </div>
             <ul className="menu-section">
-                <li>Home</li>
-                <li>Service</li>
-                <li>Industry Practices</li>
+                <li onClick={() => {navigate('/')}}>Home</li>
+                <li onClick={() => {navigate('/services')}}>Service</li>
+                <li onClick={() => {navigate('/industrypractice')}}>Industry Practices</li>
                 <li>Job Seekers</li>
                 <li>About</li>
                 <li>Gallery</li>

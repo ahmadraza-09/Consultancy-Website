@@ -128,6 +128,7 @@ a {
 .menu-section li {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 .menu-section li:hover {

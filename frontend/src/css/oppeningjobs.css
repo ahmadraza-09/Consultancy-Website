@@ -6,13 +6,13 @@ li {
     width: 100%;
     height: fit-content;
     /* border: 2px solid #000; */
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     gap: 0px;
-    padding: 40px 0px;
+    padding: 0px 0px;
 }
 
 .job-search-form {
@@ -264,6 +264,10 @@ li {
 
 /* 320px and 628px */
 @media (min-width: 320px) and (max-width: 628px) {
+
+    .oppening-jobs-section {
+        margin-top: 120px;
+    }
 
     .job-search-form {
         border-bottom-left-radius: 0px;
