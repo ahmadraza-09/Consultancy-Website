@@ -1,7 +1,11 @@
 import React from 'react'
 import '../css/footer.css';
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+    const navigate = useNavigate();
+
   return (
     <>
       <footer>
@@ -32,9 +36,9 @@ const Footer = () => {
             </div>
             <div class="footer-col">
                 <h4>menu</h4>
-                <a>home</a>
-                <a>service</a>
-                <a>industry practices</a>
+                <a onClick={() => {navigate('/')}}>home</a>
+                <a onClick={() => {navigate('/services')}}>service</a>
+                <a onClick={() => {navigate('/industrypractice')}}>industry practices</a>
                 <a>job seekers</a>
                 <a>about</a>
                 <a>gallery</a>
@@ -42,7 +46,7 @@ const Footer = () => {
             </div>
             <div class="footer-col">
                 <h4>get help</h4>
-                <a>FAQ</a>
+                <a onClick={() => {navigate('/faq')}}>FAQ</a>
                 <a>shipping</a>
                 <a>privacy policy</a>
                 <a>payment options</a>
