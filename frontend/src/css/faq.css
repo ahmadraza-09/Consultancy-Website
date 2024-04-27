@@ -69,3 +69,49 @@
     font-size: 15px;
     transition: all 0.5s ease-in-out;
 }
+
+/* Responsive */
+/* 628px and 768px */
+@media (min-width: 628px) and (max-width: 768px){
+
+    .faq-boxes .faq-box {
+        width: 550px;
+    }
+
+    .faq-section>h2 {
+        text-align: center;
+    }
+    
+}
+
+/* 320px and 628px */
+@media (min-width: 320px) and (max-width: 628px){
+    
+    .faq-boxes {
+        padding: 0px 20px;
+    }
+
+    .faq-boxes .faq-box {
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .faq-box .question button {
+        font-size: 12px;
+        padding: 3px 5px;
+    }
+
+    .faq-box .question {
+        font-size: 12px;
+    }
+
+    .faq-section>h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .faq-box .answer {
+        font-size: 12px;
+    }
+
+}
