@@ -40,6 +40,14 @@ const CompanyRegistered = () => {
                 <img src="images/company-logo8.png" alt="" />
                 <h2>HP</h2>
             </div>
+            <div className="company-card">
+                <img src="images/company-logo5.png" alt="" />
+                <h2>CAR24</h2>
+            </div>
+            <div className="company-card">
+                <img src="images/company-logo3.png" alt="" />
+                <h2>MAKE MY TRIP</h2>
+            </div>
         </div>
       </div>
     </>
