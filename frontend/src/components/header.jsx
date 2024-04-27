@@ -69,7 +69,7 @@ const Header = () => {
                 <li onClick={() => {navigate('/ourbranches')}}>Our Branches</li>
                 <li>About</li>
                 <li>Gallery</li>
-                <li>Contact</li>
+                <li onClick={() => {navigate('/contact')}}>Contact</li>
             </ul>
             <div className="job-section">
                 <button onClick={() => {navigate('/oppeningjobs')}}>Opening Jobs</button>

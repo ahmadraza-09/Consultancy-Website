@@ -6,6 +6,7 @@ import Service from './pages/service';
 import IndustryPractice from './pages/industrypractice';
 import Faq from './pages/faq';
 import OurBranches from './pages/ourbranches';
+import Contact from './pages/contact';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route  path="/industrypractice" element={<IndustryPractice/>}/>
           <Route  path="/faq" element={<Faq/>}/>
           <Route  path="/ourbranches" element={<OurBranches/>}/>
+          <Route  path="/contact" element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
     </>

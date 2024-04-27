@@ -39,10 +39,10 @@ const Footer = () => {
                 <a onClick={() => {navigate('/')}}>home</a>
                 <a onClick={() => {navigate('/services')}}>service</a>
                 <a onClick={() => {navigate('/industrypractice')}}>industry practices</a>
-                <a>job seekers</a>
+                <a onClick={() => {navigate('/ourbranches')}}>our Branches</a>
                 <a>about</a>
                 <a>gallery</a>
-                <a>contact</a>
+                <a onClick={() => {navigate('/contact')}}>contact</a>
             </div>
             <div class="footer-col">
                 <h4>get help</h4>
