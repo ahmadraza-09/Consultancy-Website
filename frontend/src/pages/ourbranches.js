@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import FaqComp from '../components/faqcomp'
+import OurBranchesComp from '../components/ourbranchescomp'
 
-const Faq = () => {
+const OurBranches = () => {
   return (
     <>
       {<Header/>}
-      {<FaqComp/>}
+      {<OurBranchesComp/>}
       {<Footer/>}
     </>
   )
 }
 
-export default Faq
+export default OurBranches

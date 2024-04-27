@@ -66,7 +66,7 @@ const Header = () => {
                 <li onClick={() => {navigate('/')}}>Home</li>
                 <li onClick={() => {navigate('/services')}}>Service</li>
                 <li onClick={() => {navigate('/industrypractice')}}>Industry Practices</li>
-                <li>Job Seekers</li>
+                <li onClick={() => {navigate('/ourbranches')}}>Our Branches</li>
                 <li>About</li>
                 <li>Gallery</li>
                 <li>Contact</li>

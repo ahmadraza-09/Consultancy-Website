@@ -7,7 +7,6 @@ import Services from '../components/services';
 import WelcomeSection from '../components/welcomesection';
 import FindJob from '../components/findjob';
 import CompanyRegistered from '../components/companyregistered';
-import FaqComp from '../components/faqcomp';
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
       {<Services/>}
       {<CompanyRegistered/>}
       {<Testimonial/>}
-      {<FaqComp/>}
       {<Footer/>}
     </>
   )
