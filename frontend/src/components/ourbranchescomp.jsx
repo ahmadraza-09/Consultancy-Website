@@ -2,7 +2,16 @@ import React, { useState, useEffect } from 'react';
 import '../css/ourbranches.css';
 
 const OurBranchesComp = () => {
-  const [selectedBranch, setSelectedBranch] = useState('Patna');
+  const [selectedBranch, setSelectedBranch] = useState({
+    name: 'Patna',
+    image: 'https://www.indiasinvitation.com/wp-content/uploads/2016/09/Patna-Tourism.jpg',
+    address: 'Patna Address details here'
+  });
+  const [branches, setBranches] = useState([
+    { name: 'Patna', image: 'https://www.indiasinvitation.com/wp-content/uploads/2016/09/Patna-Tourism.jpg', address: 'Patna Address details here' },
+    { name: 'Noida', image: 'https://themetrorailguy.com/wp-content/uploads/2015/11/WaveOneb.jpg', address: 'Noida Address details here' },
+    { name: 'Delhi', image: 'https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/c5/e8/5c.jpg', address: 'Delhi Address details here' }
+  ]);
   const [showClickBranch, setShowClickBranch] = useState(true);
 
   const handleBranchClick = (branch) => {
@@ -10,13 +19,12 @@ const OurBranchesComp = () => {
     setShowClickBranch(false);
   };
 
-
   useEffect(() => {
-      showTop();
+    showTop();
   }, []);
 
   const showTop = () => {
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -24,24 +32,14 @@ const OurBranchesComp = () => {
       <div className="our-branches-section">
         <h2>Our Branches</h2>
         <div className="branches">
-          <div className="branch" onClick={() => handleBranchClick('Patna')}>
-            <div className="brance-image">
-              <img src="https://www.indiasinvitation.com/wp-content/uploads/2016/09/Patna-Tourism.jpg" alt="" />
+          {branches.map(branch => (
+            <div key={branch.name} className="branch" onClick={() => handleBranchClick(branch)}>
+              <div className="brance-image">
+                <img src={branch.image} alt={branch.name} />
+              </div>
+              <h3>{branch.name}</h3>
             </div>
-            <h3>Patna</h3>
-          </div>
-          <div className="branch" onClick={() => handleBranchClick('Noida')}>
-            <div className="brance-image">
-              <img src="https://themetrorailguy.com/wp-content/uploads/2015/11/WaveOneb.jpg" alt="" />
-            </div>
-            <h3>Noida</h3>
-          </div>
-          <div className="branch" onClick={() => handleBranchClick('Delhi')}>
-            <div className="brance-image">
-              <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/c5/e8/5c.jpg" alt="" />
-            </div>
-            <h3>Delhi</h3>
-          </div>
+          ))}
         </div>
         <br />
         {showClickBranch && (
@@ -50,11 +48,12 @@ const OurBranchesComp = () => {
           </h3>
         )}
         <div className="branches-details">
-          <h2>{selectedBranch} Address</h2>
-          {/* Render details based on selectedBranch */}
-          {selectedBranch === 'Patna' && <p>Patna Address details here</p>}
-          {selectedBranch === 'Noida' && <p>Noida Address details here</p>}
-          {selectedBranch === 'Delhi' && <p>Delhi Address details here</p>}
+          {selectedBranch && (
+            <>
+              <h2>{selectedBranch.name} Address</h2>
+              <p>{selectedBranch.address}</p>
+            </>
+          )}
         </div>
       </div>
     </>
