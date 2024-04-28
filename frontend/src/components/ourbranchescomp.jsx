@@ -3,9 +3,11 @@ import '../css/ourbranches.css';
 
 const OurBranchesComp = () => {
   const [selectedBranch, setSelectedBranch] = useState('Patna');
+  const [showClickBranch, setShowClickBranch] = useState(true);
 
   const handleBranchClick = (branch) => {
     setSelectedBranch(branch);
+    setShowClickBranch(false);
   };
 
   return (
@@ -32,7 +34,12 @@ const OurBranchesComp = () => {
             <h3>Delhi</h3>
           </div>
         </div>
-
+        <br />
+        {showClickBranch && (
+          <h3 className='click-branch'>
+            Click The Branches To View Address & Location.
+          </h3>
+        )}
         <div className="branches-details">
           <h2>{selectedBranch} Address</h2>
           {/* Render details based on selectedBranch */}

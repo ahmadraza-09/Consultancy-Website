@@ -23,6 +23,12 @@
     gap: 40px;
 }
 
+.click-branch {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 .branch {
     width: fit-content;
     height: fit-content;
