@@ -1,11 +1,12 @@
 import React from 'react'
 import '../css/header.css'
 import { useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
 
     const navigate = useNavigate();
+    const location = useLocation();
     const [navbarsection, setNavbarSection] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -41,15 +42,15 @@ const Header = () => {
             </div>
             <div className="contact-address-banner-right">
                 <div className="contact-info">
-                    <img src="images/instagram-img.png" alt="" />
+                    <img src="/images/instagram-img.png" alt="" />
                     |
-                    <img src="images/whatsapp-img.png" alt="" />
+                    <img src="/images/whatsapp-img.png" alt="" />
                     |
-                    <img src="images/linkedin-img.png" alt="" />
+                    <img src="/images/linkedin-img.png" alt="" />
                     |
-                    <img src="images/twitter-img.png" alt="" />
+                    <img src="/images/twitter-img.png" alt="" />
                     |
-                    <img src="images/facebook-img.png" alt="" />
+                    <img src="/images/facebook-img.png" alt="" />
                 </div>
 
             </div>
@@ -60,16 +61,16 @@ const Header = () => {
             <input type="checkbox" id='check' checked={menuOpen} onChange={toggleMenu}/>
             <div className="logo-section" onClick={() => {navigate('/')}}>
                 {/* <h2 className='logo'>Job<span>Tech</span></h2> */}
-                <img src="images/hefty-logo.png" alt="" />
+                <img src="/images/hefty-logo.png" alt="" />
             </div>
             <ul className="menu-section">
-                <li onClick={() => {navigate('/')}}>Home</li>
-                <li onClick={() => {navigate('/services')}}>Service</li>
-                <li onClick={() => {navigate('/industrypractice')}}>Industry Practices</li>
-                <li onClick={() => {navigate('/ourbranches')}}>Our Branches</li>
+                <li className={location.pathname === '/' ? 'active-menu' : ''} onClick={() => {navigate('/')}}>Home</li>
+                <li className={location.pathname === '/services' ? 'active-menu' : ''} onClick={() => {navigate('/services')}}>Service</li>
+                <li className={location.pathname === '/industrypractice' ? 'active-menu' : ''} onClick={() => {navigate('/industrypractice')}}>Industry Practices</li>
+                <li className={location.pathname === '/ourbranches' ? 'active-menu' : ''} onClick={() => {navigate('/ourbranches')}}>Our Branches</li>
                 <li>About</li>
                 <li>Gallery</li>
-                <li onClick={() => {navigate('/contact')}}>Contact</li>
+                <li className={location.pathname === '/contact' ? 'active-menu' : ''} onClick={() => {navigate('/contact')}}>Contact</li>
             </ul>
             <div className="job-section">
                 <button onClick={() => {navigate('/oppeningjobs')}}>Opening Jobs</button>

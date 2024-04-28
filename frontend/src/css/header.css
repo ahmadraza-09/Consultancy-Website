@@ -2,6 +2,11 @@ a {
     text-decoration: none;
 }
 
+.active-menu {
+    font-weight: 600;
+    color: #0055ff;
+}
+
 .navbar-section {
     width: 100%;
     height: 100px;

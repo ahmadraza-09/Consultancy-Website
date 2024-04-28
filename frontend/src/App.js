@@ -7,6 +7,9 @@ import IndustryPractice from './pages/industrypractice';
 import Faq from './pages/faq';
 import OurBranches from './pages/ourbranches';
 import Contact from './pages/contact';
+// import KnowMore from './components/knowmore';
+import ServiceDetail from './components/knowmorecomp';
+import KnowMore from './pages/knowmore';
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
           <Route  path="/faq" element={<Faq/>}/>
           <Route  path="/ourbranches" element={<OurBranches/>}/>
           <Route  path="/contact" element={<Contact/>}/>
+          <Route path="/service/:serviceSlug" element={<KnowMore/>}/>
         </Routes>
       </BrowserRouter>
     </>
