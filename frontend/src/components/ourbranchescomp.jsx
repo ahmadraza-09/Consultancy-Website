@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/ourbranches.css';
 
 const OurBranchesComp = () => {
@@ -8,6 +8,15 @@ const OurBranchesComp = () => {
   const handleBranchClick = (branch) => {
     setSelectedBranch(branch);
     setShowClickBranch(false);
+  };
+
+
+  useEffect(() => {
+      showTop();
+  }, []);
+
+  const showTop = () => {
+      window.scrollTo(0, 0);
   };
 
   return (

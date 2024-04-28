@@ -1,14 +1,19 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { knowMoreData } from '../Data/servicedata';
+import { useEffect } from 'react';
 import '../css/knowmore.css';
 
 const KnowMoreComp = () => {
   const { serviceSlug } = useParams();
   const knowmore = knowMoreData.find(knowmore => knowmore.slug === serviceSlug);
 
-  const backgroundStyle = {
-    backgroundImage: `url(${knowmore.img})`
+  useEffect(() => {
+    showTop();
+  }, []);
+
+  const showTop = () => {
+    window.scrollTo(0, 0);
   };
 
   return (

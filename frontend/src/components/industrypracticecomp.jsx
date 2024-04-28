@@ -1,7 +1,17 @@
 import React from 'react'
 import '../css/services.css';
+import { useEffect } from 'react';
 
 const IndustryPracticeComp = () => {
+
+    useEffect(() => {
+        showTop();
+    }, []);
+
+    const showTop = () => {
+        window.scrollTo(0, 0);
+    };
+
   return (
     <>
       <section className='services-section industry-practice'>

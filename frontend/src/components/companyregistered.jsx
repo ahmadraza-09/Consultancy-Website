@@ -1,7 +1,17 @@
 import React from 'react'
 import '../css/companyregistered.css';
+import { useEffect } from 'react';
 
 const CompanyRegistered = () => {
+
+    useEffect(() => {
+        showTop();
+    }, []);
+
+    const showTop = () => {
+        window.scrollTo(0, 0);
+    };
+
   return (
     <>
       <div className="company-registered-section">

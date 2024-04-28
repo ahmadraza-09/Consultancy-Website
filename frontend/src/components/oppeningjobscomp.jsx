@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import '../css/oppeningjobs.css';
 
+
 const OppeningJobsComp = () => {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRegion, setSelectedRegion] = useState('All Region');
   const [selectedCategory, setSelectedCategory] = useState('All Categories');
   const [filteredJobOpenings, setFilteredJobOpenings] = useState([]);
+
+
+  useEffect(() => {
+      showTop();
+  }, []);
+
+  const showTop = () => {
+      window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     setFilteredJobOpenings(jobOpenings);

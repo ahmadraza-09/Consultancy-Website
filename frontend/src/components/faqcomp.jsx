@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/faq.css';
 
 const FaqComp = () => {
@@ -53,6 +53,15 @@ const FaqComp = () => {
             isOpen: false
         }
     ]);
+
+
+    useEffect(() => {
+        showTop();
+    }, []);
+
+    const showTop = () => {
+        window.scrollTo(0, 0);
+    };
 
     const toggleFaq = (id) => {
         setFaqs(faqs.map(faq => {

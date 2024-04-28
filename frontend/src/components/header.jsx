@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/header.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -9,6 +9,15 @@ const Header = () => {
     const location = useLocation();
     const [navbarsection, setNavbarSection] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+
+
+    useEffect(() => {
+        showTop();
+    }, []);
+
+    const showTop = () => {
+        window.scrollTo(0, 0);
+    };
 
     const changeBackground = () => {
         if (window.scrollY >= 100) {

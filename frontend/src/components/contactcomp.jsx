@@ -1,7 +1,18 @@
 import React from 'react'
 import '../css/contact.css';
+import { useEffect } from 'react';
 
 const ContactComp = () => {
+
+
+    useEffect(() => {
+        showTop();
+    }, []);
+
+    const showTop = () => {
+        window.scrollTo(0, 0);
+    };
+
   return (
     <>
       <div className="contact-section">
