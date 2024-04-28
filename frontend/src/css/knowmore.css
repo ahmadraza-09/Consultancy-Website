@@ -42,7 +42,7 @@
 }
 
 .know-more-section .contact-box {
-    max-width: 300px;
+    width: 300px;
     height: fit-content;
     border-radius: 10px;
     padding: 10px;
@@ -79,6 +79,10 @@
     }
 
     .know-more-section img {
+        width: 100%;
+    }
+
+    .know-more-section .contact-box {
         width: 100%;
     }
 }
