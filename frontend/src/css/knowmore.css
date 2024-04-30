@@ -74,6 +74,10 @@
 /* 320px and 628px */
 @media (min-width: 320px) and (max-width: 628px) {
 
+    .know-more-section {
+        margin-top: 120px;
+    }
+
     .know-more-section .heading {
         font-size: 20px;
     }
