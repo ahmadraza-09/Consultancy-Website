@@ -130,13 +130,36 @@ a {
     font-size: 15px;
 }
 
-.menu-section li {
+.more-dropdown {
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+
+.more-dropdown li {
+    width: fit-content;
+}
+
+.menu-section>li {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     position: relative;
 }
 
-.menu-section li:hover {
+.menu-section li:hover .more-dropdown {
+    display: block;
+}
+
+.menu-section>li:hover {
     color: #0055ff;
     transform: translateY(-5px);
 }

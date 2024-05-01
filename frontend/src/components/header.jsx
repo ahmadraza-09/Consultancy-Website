@@ -80,6 +80,12 @@ const Header = () => {
                 <li>About</li>
                 <li>Gallery</li>
                 <li className={location.pathname === '/contact' ? 'active-menu' : ''} onClick={() => {navigate('/contact')}}>Contact</li>
+                <li>
+                    <li className={location.pathname === '/adminlogin' ? 'active-menu' : ''}>More</li>
+                    <div className="more-dropdown">
+                        <li className={location.pathname === '/adminlogin' ? 'active-menu' : ''} onClick={() => {navigate('/adminlogin')}}>Admin Login</li>
+                    </div>
+                </li>
             </ul>
             <div className="job-section">
                 <button onClick={() => {navigate('/oppeningjobs')}}>Opening Jobs</button>

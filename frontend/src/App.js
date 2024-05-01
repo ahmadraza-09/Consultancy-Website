@@ -9,6 +9,7 @@ import OurBranches from './pages/ourbranches';
 import Contact from './pages/contact';
 import KnowMore from './pages/knowmore';
 import IndustryDataPage from './pages/industrydatapage';
+import AdminLogin from './pages/adminlogin';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route  path="/contact" element={<Contact/>}/>
           <Route  path="/service/:serviceSlug" element={<KnowMore/>}/>
           <Route  path="/industrypractice/:industrySlug" element={<IndustryDataPage/>}/>
+          <Route  path="/adminlogin" element={<AdminLogin/>}/>
         </Routes>
       </BrowserRouter>
     </>
