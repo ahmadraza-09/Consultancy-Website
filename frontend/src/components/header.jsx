@@ -74,8 +74,33 @@ const Header = () => {
             </div>
             <ul className="menu-section">
                 <li className={location.pathname === '/' ? 'active-menu' : ''} onClick={() => {navigate('/')}}>Home</li>
-                <li className={location.pathname === '/services' ? 'active-menu' : ''} onClick={() => {navigate('/services')}}>Service</li>
-                <li className={location.pathname === '/industrypractice' ? 'active-menu' : ''} onClick={() => {navigate('/industrypractice')}}>Industry Practices</li>
+                <li className={
+                    location.pathname === '/services' 
+                    || location.pathname === '/services/recruitment'
+                    || location.pathname === '/service/apprenticeship'
+                    || location.pathname === '/service/manpower'
+                    || location.pathname === '/service/staffing-solution'
+                    || location.pathname === '/service/skill-development'
+                    || location.pathname === '/service/social-entrepreneurship'
+                    ? 'active-menu' : ''} onClick={() => {navigate('/services')}}>Service</li>
+                <li className={
+                    location.pathname === '/industrypractice'
+                    || location.pathname === '/industrypractice/aerospace-defense'
+                    || location.pathname === '/industrypractice/healthcare-pharma'
+                    || location.pathname === '/industrypractice/outsourcing-offshoring'
+                    || location.pathname === '/industrypractice/automobile-auto-components'
+                    || location.pathname === '/industrypractice/industrial-infrastructure'
+                    || location.pathname === '/industrypractice/consumer-durables-building-materials'
+                    || location.pathname === '/industrypractice/real-estate-services'
+                    || location.pathname === '/industrypractice/education-internet'
+                    || location.pathname === '/industrypractice/electrical-electronics'
+                    || location.pathname === '/industrypractice/metals-minerals-mining'
+                    || location.pathname === '/industrypractice/financial-services'
+                    || location.pathname === '/industrypractice/oil-gas'
+                    || location.pathname === '/industrypractice/media-entertainment'
+                    || location.pathname === '/industrypractice/fmcg-telecom'
+                    || location.pathname === '/industrypractice/retail-logistics'
+                    ? 'active-menu' : ''} onClick={() => {navigate('/industrypractice')}}>Industry Practices</li>
                 <li className={location.pathname === '/ourbranches' ? 'active-menu' : ''} onClick={() => {navigate('/ourbranches')}}>Our Branches</li>
                 <li>About</li>
                 <li>Gallery</li>

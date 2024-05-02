@@ -9,7 +9,7 @@ const AdminLoginComp = () => {
             <h2>Login</h2>
             <h4>Welcome to Admin Login</h4>
             <input type="text" placeholder='Mobile Number'/>
-            <input type="text" placeholder='Password'/>
+            <input type="password" placeholder='Password'/>
             <button>Login</button>
         </form>
       </div>
