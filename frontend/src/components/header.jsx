@@ -77,11 +77,11 @@ const Header = () => {
                 <li className={
                     location.pathname === '/services' 
                     || location.pathname === '/services/recruitment'
-                    || location.pathname === '/service/apprenticeship'
-                    || location.pathname === '/service/manpower'
-                    || location.pathname === '/service/staffing-solution'
-                    || location.pathname === '/service/skill-development'
-                    || location.pathname === '/service/social-entrepreneurship'
+                    || location.pathname === '/services/apprenticeship'
+                    || location.pathname === '/services/manpower'
+                    || location.pathname === '/services/staffing-solution'
+                    || location.pathname === '/services/skill-development'
+                    || location.pathname === '/services/social-entrepreneurship'
                     ? 'active-menu' : ''} onClick={() => {navigate('/services')}}>Service</li>
                 <li className={
                     location.pathname === '/industrypractice'

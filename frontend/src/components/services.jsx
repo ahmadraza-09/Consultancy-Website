@@ -15,7 +15,7 @@ const Services = () => {
   ];
 
   const handleNavigate = (slug) => {
-    navigate(`/service/${slug}`);
+    navigate(`/services/${slug}`);
   };
 
   return (
