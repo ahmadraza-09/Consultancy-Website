@@ -7,6 +7,7 @@ import IndustryPractice from './pages/industrypractice';
 import Faq from './pages/faq';
 import OurBranches from './pages/ourbranches';
 import Contact from './pages/contact';
+import About from './pages/about';
 import KnowMore from './pages/knowmore';
 import IndustryDataPage from './pages/industrydatapage';
 import AdminLogin from './pages/adminlogin';
@@ -23,6 +24,7 @@ function App() {
           <Route  path="/faq" element={<Faq/>}/>
           <Route  path="/ourbranches" element={<OurBranches/>}/>
           <Route  path="/contact" element={<Contact/>}/>
+          <Route  path="/about" element={<About/>}/>
           <Route  path="/services/:serviceSlug" element={<KnowMore/>}/>
           <Route  path="/industrypractice/:industrySlug" element={<IndustryDataPage/>}/>
           <Route  path="/adminlogin" element={<AdminLogin/>}/>

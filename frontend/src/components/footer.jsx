@@ -40,7 +40,7 @@ const Footer = () => {
                 <a onClick={() => {navigate('/services')}}>service</a>
                 <a onClick={() => {navigate('/industrypractice')}}>industry practices</a>
                 <a onClick={() => {navigate('/ourbranches')}}>our Branches</a>
-                <a>about</a>
+                <a onClick={() => {navigate('/about')}}>about</a>
                 <a>gallery</a>
                 <a onClick={() => {navigate('/contact')}}>contact</a>
             </div>

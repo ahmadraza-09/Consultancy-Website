@@ -1,25 +1,28 @@
 import React, { useState, useEffect } from 'react';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import '../css/oppeningjobs.css';
 
-
 const OppeningJobsComp = () => {
-
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRegion, setSelectedRegion] = useState('All Region');
   const [selectedCategory, setSelectedCategory] = useState('All Categories');
   const [filteredJobOpenings, setFilteredJobOpenings] = useState([]);
-
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-      showTop();
+    showTop();
   }, []);
 
   const showTop = () => {
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
-    setFilteredJobOpenings(jobOpenings);
+    setTimeout(() => {
+      setFilteredJobOpenings(jobOpenings);
+      setLoading(false);
+    }, 2000); 
   }, []);
 
   const jobOpenings = [
@@ -46,7 +49,6 @@ const OppeningJobsComp = () => {
   return (
     <>
       <div className="oppening-jobs-section">
-
         <div className="job-search-form">
           <div className="overlay">
             <h1>Find Your <span>Dream Job</span></h1>
@@ -83,7 +85,36 @@ const OppeningJobsComp = () => {
         <div className="job-oppening-data">
           <h2>Opening Jobs List</h2>
           <div className="jobs-data">
-            {filteredJobOpenings.length > 0 ? (
+            {loading ? (
+              Array.from({ length: 6 }).map((_, index) => (
+                <div className="job-card" key={index}>
+                  <Skeleton className='job-title' height={20} width="100%"/>
+                  <Skeleton className='job-category ' height={20} width={150} />
+                  <Skeleton height={20} width={100}/>
+                  <div className="job-exp-salery">
+                    <div className="job-exp">
+                      <Skeleton height={20} width={100} />
+                    </div>
+                    <div className="job-salery">
+                      <Skeleton height={20} width={100} />
+                    </div>
+                  </div>
+                  <div className="job-qualification">
+                    <Skeleton height={20} width="560px" />
+                  </div>
+                  <div className="job-skills">
+                    <Skeleton height={20} width={300} />
+                  </div>
+                  <div className="job-posted-time">
+                    <Skeleton height={20} width={100} />
+                  </div>
+                  <div className="job-apply-button">
+                    <Skeleton height={40} width={120} />
+                  </div>
+                </div>
+              ))
+            ) : (
+              filteredJobOpenings.length > 0 ? (
                 filteredJobOpenings.map(job => (
                   <div className="job-card" key={job.id}>
                     <h2 className="job-title">{job.title}</h2>
@@ -120,6 +151,7 @@ const OppeningJobsComp = () => {
                 ))
               ) : (
                 <p className="no-data-message">No Data Found!</p>
+              )
             )}
           </div>
         </div>

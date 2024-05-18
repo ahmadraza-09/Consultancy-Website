@@ -12,6 +12,7 @@ footer {
     background-image: url('./images/asset4.png');
     background-repeat: no-repeat;
     background-position: center top;
+    border-top: 5px solid #0055ff;
 }
 
 a {

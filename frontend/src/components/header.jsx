@@ -102,7 +102,7 @@ const Header = () => {
                     || location.pathname === '/industrypractice/retail-logistics'
                     ? 'active-menu' : ''} onClick={() => {navigate('/industrypractice')}}>Industry Practices</li>
                 <li className={location.pathname === '/ourbranches' ? 'active-menu' : ''} onClick={() => {navigate('/ourbranches')}}>Our Branches</li>
-                <li>About</li>
+                <li className={location.pathname === '/about' ? 'active-menu' : ''} onClick={() => {navigate('/about')}}>About</li>
                 <li>Gallery</li>
                 <li className={location.pathname === '/contact' ? 'active-menu' : ''} onClick={() => {navigate('/contact')}}>Contact</li>
                 <li>
