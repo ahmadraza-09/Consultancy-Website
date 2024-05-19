@@ -11,6 +11,7 @@ import About from './pages/about';
 import KnowMore from './pages/knowmore';
 import IndustryDataPage from './pages/industrydatapage';
 import AdminLogin from './pages/adminlogin';
+import Gallery from './pages/gallery';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route  path="/ourbranches" element={<OurBranches/>}/>
           <Route  path="/contact" element={<Contact/>}/>
           <Route  path="/about" element={<About/>}/>
+          <Route  path="/gallery" element={<Gallery/>}/>
           <Route  path="/services/:serviceSlug" element={<KnowMore/>}/>
           <Route  path="/industrypractice/:industrySlug" element={<IndustryDataPage/>}/>
           <Route  path="/adminlogin" element={<AdminLogin/>}/>
