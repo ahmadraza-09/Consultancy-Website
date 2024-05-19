@@ -181,6 +181,8 @@
 }
 
 .staffing-content {
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,6 +192,7 @@
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
+    /* border: 2px solid #000; */
 }
 
 .staffing-box {
@@ -200,8 +203,76 @@
     transition: all 0.5s ease-in-out;
 }
 
+.sourcing-box {
+    height: 250px;
+}
+
 .staffing-box:hover {
     transform: translateY(-10px);
+}
+
+.company-quote {
+    width: 100%;
+    height: fit-content;
+    background-color: #1178bb;
+    padding: 10px 10px;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-quote>p {
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 55px;
+    padding: 10px;
+}
+
+.company-leaders {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-leaders-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0px 80px;
+}
+
+.company-leaders-card {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.leader-image {
+    width: 100%;
+}
+
+.leader-image img {
+    width: 200px;
+}
+
+.leader-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Responsive */
@@ -230,6 +301,14 @@
     
     .about-section {
         margin-top: 120px;
+    }
+
+    .company-quote>p {
+        padding: 20px;
+    }
+
+    .company-leaders-cards {
+        padding: 0px 10px;
     }
 
     .industries-boxes {

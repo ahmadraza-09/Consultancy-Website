@@ -233,6 +233,150 @@ const AboutComp = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="staffing-solution">
+                <h2>SOURCING CAPABILITIES</h2>
+                <div className="staffing-boxes">
+                    <div className="staffing-box sourcing-box">
+                        <div className="staffing-image">
+                            <img src="images/Field-Recruitment.jpg" alt="" />
+                        </div>
+                        <div className="staffing-content">
+                            <h4>Field Recruitment</h4>
+                            <p>Public places, Industrial Areas,
+                                Commercial Complexes, etc    
+                            </p>
+                        </div>
+                    </div>
+                    <div className="staffing-box sourcing-box">
+                        <div className="staffing-image">
+                            <img src="images/job_portal.png" alt="" />
+                        </div>
+                        <div className="staffing-content">
+                            <h4>Job Portals</h4>
+                            <p>Naukri, Monster,
+                                Timesjobs, Quikr, etc.  
+                            </p>
+                        </div>
+                    </div>
+                    <div className="staffing-box sourcing-box">
+                        <div className="staffing-image">
+                            <img src="images/initiative.jpg" alt="" />
+                        </div>
+                        <div className="staffing-content">
+                            <h4>Marketing Initiatives</h4>
+                            <p>Pamphlets, Newspaper ads, Road
+                                Shows, Job Fairs, Banners,
+                                Standees, Posters
+                            </p>
+                        </div>
+                    </div>
+                    <div className="staffing-box sourcing-box">
+                        <div className="staffing-image">
+                            <img src="images/networking-challenges.png" alt="" />
+                        </div>
+                        <div className="staffing-content">
+                            <h4>Networking Channels</h4>
+                            <p>Candidate Referencing, Freelancers,
+                                Govt. Agencies, Training Institutes, etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="staffing-box sourcing-box">
+                        <div className="staffing-image">
+                            <img src="images/database.webp" alt="" />
+                        </div>
+                        <div className="staffing-content">
+                            <h4>Internal Database</h4>
+                            <p>10+ LakhProfiles on InternalDatabase.</p>
+                        </div>
+                    </div>
+                    <div className="staffing-box sourcing-box">
+                        <div className="staffing-image">
+                            <img src="images/walk-In-Interview-Post.png" alt="" />
+                        </div>
+                        <div className="staffing-content">
+                            <h4>Walk-ins & Direct Apply</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="company-quote">
+                <p>
+                    ❝We believe that our Associates are our brand ambassadors. When we focus on
+                    delivering happiness to our associates, we automatically deliver customer delight!❞
+                </p>
+            </div>
+
+            <div className="company-leaders">
+                <h2>OUR BUSINESS LEADERS</h2>
+                <div className="company-leaders-cards">
+                    <div className="comapany-leaders-card">
+                        <div className="leader-image">
+                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                        </div>
+                        <div className="leader-name">
+                            <h4>Mr. Ayush Arya</h4>
+                            <p>Managing director</p>
+                        </div>
+                    </div>
+                    <div className="comapany-leaders-card">
+                        <div className="leader-image">
+                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                        </div>
+                        <div className="leader-name">
+                            <h4>Mr. Deepak Kumar</h4>
+                            <p>Director</p>
+                        </div>
+                    </div>
+                    <div className="comapany-leaders-card">
+                        <div className="leader-image">
+                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                        </div>
+                        <div className="leader-name">
+                            <h4>Ms. Simply Jaiswal</h4>
+                            <p>VP –East Cost Sales Head</p>
+                        </div>
+                    </div>
+                    <div className="comapany-leaders-card">
+                        <div className="leader-image">
+                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                        </div>
+                        <div className="leader-name">
+                            <h4>Mr. Rishav Kumar</h4>
+                            <p>VP –Sales & Ops (East Coast)</p>
+                        </div>
+                    </div>
+                    <div className="comapany-leaders-card">
+                        <div className="leader-image">
+                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                        </div>
+                        <div className="leader-name">
+                            <h4>Ms. Nilam Kumar</h4>
+                            <p>AVP –National Training Head</p>
+                        </div>
+                    </div>
+                    <div className="comapany-leaders-card">
+                        <div className="leader-image">
+                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                        </div>
+                        <div className="leader-name">
+                            <h4>Ms. Mahima Kumari</h4>
+                            <p>Chief Placement Officer</p>
+                        </div>
+                    </div>
+                    <div className="comapany-leaders-card">
+                        <div className="leader-image">
+                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                        </div>
+                        <div className="leader-name">
+                            <h4>Ms. Sony Singh</h4>
+                            <p>Chief Sourcing Officer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
       </div>
     </>
   )
