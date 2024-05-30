@@ -19,6 +19,13 @@ const Header = () => {
         window.scrollTo(0, 0);
     };
 
+    const handleWhatsAppClick = () => {
+        const phoneNumber = '9471876257';
+        const message = 'Hello, I would like to inquire about your services.';
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    };
+
     const changeBackground = () => {
         if (window.scrollY >= 100) {
             setNavbarSection(true);
@@ -53,7 +60,7 @@ const Header = () => {
                 <div className="contact-info">
                     <img src="/images/instagram-img.png" alt="" />
                     |
-                    <img src="/images/whatsapp-img.png" alt="" />
+                    <img src="/images/whatsapp-img.png" alt="" onClick={handleWhatsAppClick}/>
                     |
                     <img src="/images/linkedin-img.png" alt="" />
                     |

@@ -24,10 +24,11 @@
 }
 
 .testimonial-card p {
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-.stars i {
+.stars {
     font-size: 10px;
     color: #ffa534;
 }

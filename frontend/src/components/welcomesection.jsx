@@ -1,7 +1,7 @@
-import React from 'react'
 import '../css/welcome.css';
 
 const WelcomeSection = () => {
+
   return (
     <>
       <section className="welcome-section">
