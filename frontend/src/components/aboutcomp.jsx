@@ -314,7 +314,7 @@ const AboutComp = () => {
                 <div className="company-leaders-cards">
                     <div className="comapany-leaders-card">
                         <div className="leader-image">
-                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                            {/* <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" /> */}
                         </div>
                         <div className="leader-name">
                             <h4>Mr. Ayush Arya</h4>
@@ -323,7 +323,7 @@ const AboutComp = () => {
                     </div>
                     <div className="comapany-leaders-card">
                         <div className="leader-image">
-                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                            {/* <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" /> */}
                         </div>
                         <div className="leader-name">
                             <h4>Mr. Deepak Kumar</h4>
@@ -332,7 +332,7 @@ const AboutComp = () => {
                     </div>
                     <div className="comapany-leaders-card">
                         <div className="leader-image">
-                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                            {/* <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" /> */}
                         </div>
                         <div className="leader-name">
                             <h4>Ms. Simply Jaiswal</h4>
@@ -341,7 +341,7 @@ const AboutComp = () => {
                     </div>
                     <div className="comapany-leaders-card">
                         <div className="leader-image">
-                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                            {/* <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" /> */}
                         </div>
                         <div className="leader-name">
                             <h4>Mr. Rishav Kumar</h4>
@@ -350,7 +350,7 @@ const AboutComp = () => {
                     </div>
                     <div className="comapany-leaders-card">
                         <div className="leader-image">
-                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                            {/* <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" /> */}
                         </div>
                         <div className="leader-name">
                             <h4>Ms. Nilam Kumar</h4>
@@ -359,7 +359,7 @@ const AboutComp = () => {
                     </div>
                     <div className="comapany-leaders-card">
                         <div className="leader-image">
-                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                            {/* <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" /> */}
                         </div>
                         <div className="leader-name">
                             <h4>Ms. Mahima Kumari</h4>
@@ -368,7 +368,7 @@ const AboutComp = () => {
                     </div>
                     <div className="comapany-leaders-card">
                         <div className="leader-image">
-                            <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" />
+                            {/* <img src="https://www.tvsmotor.com/-/media/Feature/About-US/Board-Of-Directors/detail-page/venu-srinivasan-desk-detail.jpg" alt="" /> */}
                         </div>
                         <div className="leader-name">
                             <h4>Ms. Sony Singh</h4>
